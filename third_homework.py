@@ -11,8 +11,7 @@
 #     operation = input("Enter the operation (+, -, *, /, **): ").strip()
 
 #     try:
-#         num1 = float(first_input)
-#         num2 = float(second_input)
+       num1, num2 = float(first_input), float(second_input)
 
 #         if operation == "+":
 #             result = num1 + num2
