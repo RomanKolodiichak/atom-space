@@ -81,7 +81,4 @@ while True:
 
     balance -= amount
 
-    if category in expenses:
-        expenses[category] += amount
-    else:
-        expenses[category] = amount
+    expenses[category] = expenses.get(category, 0) + amount
