@@ -75,8 +75,8 @@ values = user_input.split()
 if len(values) < 3:
     print("Error: please enter at least three numbers")
 else:
-    if values[0].isdigit() and values[1].isdigit() and values[2].isdigit():
-        total = int(values[0]) + int(values[1]) + int(values[2])
+    if all(value.isdigit() for value in values[:3]):
+        total = sum(int(value) for value in values[:3])
         print("Sum of three numbers:", total)
     else:
         print("Error: one or more values are not numbers")
